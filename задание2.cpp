@@ -14,7 +14,7 @@ int main() {
 
     if (hours < 1 || hours > 24) {
         cout << "Error: hours must be 1-24" << endl;
-        return 0;
+        return 1;
     }
 
     if (lostTicket == 1) {
