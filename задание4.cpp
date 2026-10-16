@@ -19,7 +19,7 @@ int main() {
 
     if (hours < 1 || hours > 24) {
         cout << "Error: hours must be 1-24" << endl;
-        return 0;
+        return 1;
     }
 
     switch (type) {
@@ -28,7 +28,7 @@ int main() {
     case 'B': rate = 7; fine = 80; break;
     default:
         cout << "Error: unknown type" << endl;
-        return 0;
+        return 1;
     }
 
     if (lost == 1) {
