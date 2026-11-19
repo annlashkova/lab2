@@ -36,12 +36,11 @@ int main() {
         cout << "Rule: lost ticket fine" << endl;
     }
     else {
-        int paidhours = hours;
-        if (paidhours > 8) {
-            paidhours = 8;
+        if (hours > 8) {
+            hours = 8;
         }
 
-        total = paidhours * rate;
+        total = hours * rate;
 
         if (weekend == 1 && type != 'M') {
             total = total * 1.2;
