@@ -21,9 +21,8 @@ int main() {
         total = 50;
     }
     else {
-        int paidHours = hours;
-        if (paidHours > 8) paidHours = 8;
-        total = paidHours * 3;
+        if (hours > 8) hours = 8;
+        total = hours * 3;
 
         if (weekend == 1) {
             total = total * 1.2;
